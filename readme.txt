@@ -4,8 +4,8 @@ Contributors: everestthemes
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, one-column, two-columns, blog, right-sidebar, theme-options, footer-widgets, left-sidebar, grid-layout, news, custom-header
 
 Requires at least: 4.8.0
-Tested up to: 5.0.2
-Stable tag: 1.0.1
+Tested up to: 5.1.1
+Stable tag: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,7 +43,6 @@ Everest News is distributed under the terms of the GNU GPL
 
 * Retina https://github.com/strues/retinajs, Copyright (c) 2013-2017 Steven Truesdell, John Newman, Ben Atkin, and other contributors, [MIT](http://opensource.org/licenses/MIT)
 
-* Smoothscroll https://github.com/galambalazs/smoothscroll-for-websites, Copyright (c) 2010-2015 Balazs Galambosi, [MIT](http://opensource.org/licenses/MIT)
 
 * Stellarnav https://github.com/vinnymoreira/stellarnav, Copyright (c) 2016 Vinny Moreira, [MIT](http://opensource.org/licenses/MIT)
 
@@ -90,6 +89,13 @@ Everest News includes support for jetpack, contact Form 7
 
 
 == Changelog ==
+
+
+= 1.0.2 - 22 April, 2019 == 
+
+- Fix: smooth scroll issue at Chrome browser
+- Removed: Smoothscroll.js 
+
 
 == 1.0.1 - December 20, 2018 ==
 
