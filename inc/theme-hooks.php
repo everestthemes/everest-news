@@ -64,7 +64,7 @@ if( ! function_exists( 'everest_news_site_identity_action' ) ) :
 				the_custom_logo(); 
 			} else {
 				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
 				<?php 
                 $site_description = get_bloginfo( 'description', 'display' );
                 if ( $site_description || is_customize_preview() ) {

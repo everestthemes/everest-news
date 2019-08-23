@@ -199,6 +199,11 @@ if ( ! function_exists( 'everest_news_recommended_plugins' ) ) :
                 'slug'     => 'everest-toolkit',
                 'required' => false,
             ),
+            array(
+                'name'     => esc_html__( 'Contact Form by WPForms – Drag & Drop Form Builder for WordPress', 'arya-multipurpose' ),
+                'slug'     => 'wpforms-lite',
+                'required' => false,
+            ),
         );
 
         tgmpa( $plugins );

@@ -19,6 +19,11 @@
 	</head>
 
 	<body <?php body_class(); ?>>
+		<?php
+		if( class_exists( 'wp_body_open' ) ) { 
+		    wp_body_open(); 
+		}
+		?>
 		
 		<div class="en-pagewrap">
 
