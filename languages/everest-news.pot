@@ -351,6 +351,10 @@ msgstr ""
 msgid "Everest Toolkit"
 msgstr ""
 
+#: inc/helper-functions.php:203
+msgid "Contact Form by WPForms – Drag & Drop Form Builder for WordPress"
+msgstr ""
+
 #: inc/metabox/class-everest-news-post-meta.php:66
 msgid "Right"
 msgstr ""
