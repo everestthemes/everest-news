@@ -2,10 +2,10 @@
 
 Contributors: everestthemes
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, one-column, two-columns, blog, right-sidebar, theme-options, footer-widgets, left-sidebar, grid-layout, news, custom-header
-
+Requires PHP: 5.6
 Requires at least: 4.8.0
-Tested up to: 5.1.1
-Stable tag: 1.0.2
+Tested up to: 5.2.2
+Stable tag: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -89,6 +89,17 @@ Everest News includes support for jetpack, contact Form 7
 
 
 == Changelog ==
+
+
+= 1.0.3 - 23 August, 2019 == 
+
+- Required php version updated to 5.6
+- Tested upto 5.2.2 WordPress version
+- Added wp_body_open function
+- Removed contact form 7 recommendation
+- Added recommendation for Contact Form by WPForms
+- Changed site title markup to span
+- Updated language file
 
 
 = 1.0.2 - 22 April, 2019 == 
