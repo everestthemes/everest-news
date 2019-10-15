@@ -200,7 +200,7 @@ if ( ! function_exists( 'everest_news_recommended_plugins' ) ) :
                 'required' => false,
             ),
             array(
-                'name'     => esc_html__( 'Contact Form by WPForms – Drag & Drop Form Builder for WordPress', 'everest-news' ),
+                'name'     => esc_html__( 'Contact Form by WPForms : Drag & Drop Form Builder for WordPress', 'everest-news' ),
                 'slug'     => 'wpforms-lite',
                 'required' => false,
             ),
