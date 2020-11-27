@@ -60,13 +60,19 @@ Everest News is distributed under the terms of the GNU GPL
 
 
 Images used in screenshot
-https://pixabay.com/en/water-summer-outdoors-sea-3211175/ (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
-https://pixabay.com/en/fashion-afro-american-black-people-1835871/ (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
-https://pixabay.com/en/sports-persons-running-people-731506/ (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
-https://pixabay.com/en/beach-girl-landscape-leisure-1867617/ (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
-https://pixabay.com/en/megaphone-loud-speaker-speaker-1480342/ (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
-https://pixabay.com/en/woman-protester-mask-protest-2712315/ (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
-https://pixabay.com/en/journalists-reporter-video-tv-2944634/ (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
+https://pxhere.com/en/photo/125124 (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
+
+https://pxhere.com/en/photo/764061 (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
+
+https://pxhere.com/en/photo/6211 (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
+
+https://pxhere.com/en/photo/1088659 (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
+
+https://pxhere.com/en/photo/1632469 (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
+
+https://pxhere.com/en/photo/637259 (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
+
+https://stocksnap.io/photo/analog-camera-ME8MTJVVSL (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
 Logo Image & Advertisement Image, self created GPLv2
 
 
