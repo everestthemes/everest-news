@@ -97,6 +97,10 @@ Everest News includes support for jetpack, contact Form 7
 == Changelog ==
 
 
+= 1.0.7 - 17 May, 2021 == 
+
+- Compatibility check with WordPress 5.7
+
 = 1.0.6 - 12 December, 2020 == 
 
 - Compatibility check with WordPress 5.6
