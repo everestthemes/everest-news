@@ -100,13 +100,13 @@ if( ! class_exists( 'Everest_News_Banner_Widget_One' ) ) {
                     if( !empty( $categories ) ) {
                         foreach($categories as $cat) {
                         ?>
-                        <input id="<?php echo $this->get_field_id( 'categories' ) . $cat->term_id; ?>" name="<?php echo $this->get_field_name('categories'); ?>[]" type="checkbox" value="<?php echo $cat->slug; ?>" <?php if(!empty($instance['categories'])) { ?><?php foreach ( $instance['categories'] as $checked ) { checked( $checked, $cat->slug, true ); } ?><?php } ?>><?php echo esc_html( $cat->name ); ?>
+                        <input id="<?php echo esc_attr( $this->get_field_id( 'categories' ) ) . $cat->term_id; ?>" name="<?php echo esc_attr( $this->get_field_name('categories') ); ?>[]" type="checkbox" value="<?php echo esc_attr( $cat->slug ); ?>" <?php if(!empty($instance['categories'])) { ?><?php foreach ( $instance['categories'] as $checked ) { checked( $checked, $cat->slug, true ); } ?><?php } ?>><?php echo esc_html( $cat->name ); ?>
                         <br>
                         <?php
                         }
                     } else {
                         ?>
-                        <input id="<?php echo $this->get_field_id( 'categories' ); ?>" name="<?php echo $this->get_field_name('categories'); ?>" type="hidden" value="" checked>
+                        <input id="<?php echo esc_attr( $this->get_field_id( 'categories' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name('categories') ); ?>" type="hidden" value="" checked>
                         <small><?php echo esc_html__( 'No categories to select.', 'everest-news' ); ?></small>
                         <?php
                     }

@@ -3010,7 +3010,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 				remove_filter( 'upgrader_source_selection', array( $this->tgmpa, 'maybe_adjust_source_dir' ), 1 );
 
-				echo '</div></div>';
+				echo  '</div></div>';
 
 				return true;
 			}
@@ -3688,14 +3688,7 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 						// Display message based on if all plugins are now active or not.
 						$update_actions = array();
 
-						if ( $this->tgmpa->is_tgmpa_complete() ) {
-							// All plugins are active, so we display the complete string and hide the menu to protect users.
-							echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
-							$update_actions['dashboard'] = sprintf(
-								esc_html( $this->tgmpa->strings['complete'] ),
-								'<a href="' . esc_url( self_admin_url() ) . '">' . esc_html__( 'Return to the Dashboard', 'everest-news' ) . '</a>'
-							);
-						} else {
+						 else {
 							$update_actions['tgmpa_page'] = '<a href="' . esc_url( $this->tgmpa->get_tgmpa_url() ) . '" target="_parent">' . esc_html( $this->tgmpa->strings['return'] ) . '</a>';
 						}
 

@@ -385,7 +385,7 @@ class Everest_News {
 	 * @return void
 	 */
 	public function search_form() {
-		$form = '<form role="search" method="get" id="search-form" class="clearfix" action="' . esc_url( home_url( '/' ) ) . '"><input type="search" name="s" placeholder="' . esc_attr__( 'Type Something', 'everest-news' ) . '" value"' . get_search_query() . '" ><input type="submit" id="submit" value="'. esc_attr__( 'Search', 'everest-news' ).'"></form>';
+		$form = '<form role="search" method="get" id="search-form" class="clearfix" action="' . esc_url( home_url( '/' ) ) . '"><input type="search" name="s" placeholder="' . esc_attr__( 'Type Something', 'everest-news' ) . '" value="' . esc_attr( get_search_query() ) . '" ><input type="submit" id="submit" value="'. esc_attr__( 'Search', 'everest-news' ).'"></form>';
 
         return $form;
 	}

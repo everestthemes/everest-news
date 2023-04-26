@@ -27,7 +27,7 @@ if( ! class_exists( 'Everest_News_Image_Radio_Button_Custom_Control' ) ) {
 			<?php foreach ( $this->choices as $key => $value ) { ?>
 				<label class="radio-button-label">
 					<input type="radio" name="<?php echo esc_attr( $this->id ); ?>" value="<?php echo esc_attr( $key ); ?>" <?php $this->link(); ?> <?php checked( esc_attr( $key ), $this->value() ); ?>/>
-					<img src="<?php echo esc_attr( $value['image'] ); ?>" alt="<?php echo esc_attr( $value['name'] ); ?>" title="<?php echo esc_attr( $value['name'] ); ?>" />
+					<img src="<?php echo esc_url( $value['image'] ); ?>" alt="<?php echo esc_attr( $value['name'] ); ?>" title="<?php echo esc_attr( $value['name'] ); ?>" />
 				</label>
 			<?php	} ?>
 		</div>
