@@ -3688,9 +3688,7 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 						// Display message based on if all plugins are now active or not.
 						$update_actions = array();
 
-						 else {
-							$update_actions['tgmpa_page'] = '<a href="' . esc_url( $this->tgmpa->get_tgmpa_url() ) . '" target="_parent">' . esc_html( $this->tgmpa->strings['return'] ) . '</a>';
-						}
+						$update_actions['tgmpa_page'] = '<a href="' . esc_url( $this->tgmpa->get_tgmpa_url() ) . '" target="_parent">' . esc_html( $this->tgmpa->strings['return'] ) . '</a>';
 
 						/**
 						 * Filter the list of action links available following bulk plugin installs/updates.
