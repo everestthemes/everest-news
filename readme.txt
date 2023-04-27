@@ -96,6 +96,11 @@ Everest News includes support for jetpack, contact Form 7
 
 == Changelog ==
 
+= 1.2.1 - 26 April, 2023 ==
+
+- Compatibility check with WordPress 6.2
+- Fix: xss bug fixes
+
 = 1.1.0 - 11 April, 2023 ==
 
 = 1.0.9 - 7 April, 2022 == 
