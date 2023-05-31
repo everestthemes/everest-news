@@ -4,8 +4,8 @@ Contributors: everestthemes
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, one-column, two-columns, blog, right-sidebar, theme-options, footer-widgets, left-sidebar, grid-layout, news, custom-header
 Requires PHP: 5.6
 Requires at least: 4.8.0
-Tested up to: 6.0
-Stable tag: 1.2.0
+Tested up to: 6.2
+Stable tag: 1.2.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -95,6 +95,9 @@ Everest News includes support for jetpack, contact Form 7
 
 
 == Changelog ==
+
+= 1.1.1 - 31 May, 2023 ==
+- Disabled lazy load functionality
 
 = 1.1.0 - 11 April, 2023 ==
 
