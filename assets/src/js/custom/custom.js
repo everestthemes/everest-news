@@ -145,6 +145,7 @@
         /* 
         ===========================================
         = Configure lazyload ( lazysizes.js ) 
+        Lazy load disabled.
         ==================================================
         */
 
@@ -176,7 +177,14 @@
 
         }
 
-        lazy();
+        /**
+         * Lazy load disabled.
+         */
+        const lazyLoadingWrappers = document.querySelectorAll('.lazyloading');
+
+        lazyLoadingWrappers.forEach(function(lazyLoadingWrapper) {
+            lazyLoadingWrapper.classList.remove('lazyloading');
+        });
 
         window.lazySizesConfig = window.lazySizesConfig || {};
 
