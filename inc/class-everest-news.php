@@ -21,7 +21,7 @@ class Everest_News {
 	 */
 	public function __construct() {
 
-		add_action( 'after_setup_theme', array( $this, 'setup' ), 10 );		
+		add_action( 'after_setup_theme', array( $this, 'setup' ), 10 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ), 10 );
 		add_filter( 'body_class', array( $this, 'body_classes' ), 10, 1 );
 		add_action( 'wp_head', array( $this, 'pingback_header' ), 10 );
@@ -45,7 +45,6 @@ class Everest_News {
 	 * @return  void
 	 */
 	public function setup() {
-
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -72,34 +71,45 @@ class Everest_News {
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-		add_image_size( 'everest-news-thumbnail-one', 800, 450, true ); //16:9
-		add_image_size( 'everest-news-thumbnail-two', 500, 375, true ); //4:3
-		add_image_size( 'everest-news-thumbnail-three', 150, 150, true ); //1:1 Author Widget
+		add_image_size( 'everest-news-thumbnail-one', 800, 450, true ); // 16:9.
+		add_image_size( 'everest-news-thumbnail-two', 500, 375, true ); // 4:3.
+		add_image_size( 'everest-news-thumbnail-three', 150, 150, true ); // 1:1 Author Widget.
 
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary Menu', 'everest-news' ), // Primary Menu
-			'menu-2' => esc_html__( 'Top Header Menu', 'everest-news' ), // Top Header Menu
-			'menu-3' => esc_html__( 'Bottom Footer Menu', 'everest-news' ), // Bottom Footer Menu
-		) );
+		register_nav_menus(
+			array(
+				'menu-1' => esc_html__( 'Primary Menu', 'everest-news' ), // Primary Menu.
+				'menu-2' => esc_html__( 'Top Header Menu', 'everest-news' ), // Top Header Menu.
+				'menu-3' => esc_html__( 'Bottom Footer Menu', 'everest-news' ), // Bottom Footer Menu.
+			)
+		);
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
-		add_theme_support( 'html5', array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		) );
+		add_theme_support(
+			'html5',
+			array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+			)
+		);
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'everest_news_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
+		add_theme_support(
+			'custom-background',
+			apply_filters(
+				'everest_news_custom_background_args',
+				array(
+					'default-color' => 'ffffff',
+					'default-image' => '',
+				)
+			)
+		);
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -109,26 +119,35 @@ class Everest_News {
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
-		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
-			'flex-width'  => true,
-			'flex-height' => true,
-		) );
+		add_theme_support(
+			'custom-logo',
+			array(
+				'height'      => 250,
+				'width'       => 250,
+				'flex-width'  => true,
+				'flex-height' => true,
+			)
+		);
 
 		/**
 		 * Add support for core custom header.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/custom-headers/
 		 */
-		add_theme_support( 'custom-header', apply_filters( 'everest_news_custom_header_args', array(
-			'default-image'          => '',
-			'default-text-color'     => '000000',
-			'width'                  => 1170,
-			'height'                 => 290,
-			'flex-height'            => true,
-			'wp-head-callback'       => array( $this, 'header_style' ),
-		) ) );
+		add_theme_support(
+			'custom-header',
+			apply_filters(
+				'everest_news_custom_header_args',
+				array(
+					'default-image'      => '',
+					'default-text-color' => '000000',
+					'width'              => 1170,
+					'height'             => 290,
+					'flex-height'        => true,
+					'wp-head-callback'   => array( $this, 'header_style' ),
+				)
+			)
+		);
 
 		// This variable is intended to be overruled from themes.
 		// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
@@ -167,8 +186,8 @@ class Everest_News {
 				position: absolute;
 				clip: rect(1px, 1px, 1px, 1px);
 			}
-		<?php
-		// If the user has set a custom color for the text use that.
+			<?php
+			// If the user has set a custom color for the text use that.
 		else :
 			?>
 			.header-lay-5 .site-title a,
@@ -184,18 +203,18 @@ class Everest_News {
 	/**
 	 * Enqueue scripts and styles.
 	 *
-	 * @see 	https://codex.wordpress.org/Plugin_API/Action_Reference/wp_enqueue_scripts
-	 * @see 	https://developer.wordpress.org/reference/functions/wp_enqueue_style/
-	 * @see 	https://developer.wordpress.org/reference/functions/wp_enqueue_script/
-	 * @return 	void
+	 * @see https://codex.wordpress.org/Plugin_API/Action_Reference/wp_enqueue_scripts
+	 * @see https://developer.wordpress.org/reference/functions/wp_enqueue_style/
+	 * @see https://developer.wordpress.org/reference/functions/wp_enqueue_script/
+	 * @return void
 	 */
 	public function enqueue_scripts() {
 
-		wp_enqueue_style( 'everest-news-style', get_stylesheet_uri() );
+		wp_enqueue_style( 'everest-news-style', get_stylesheet_uri() ); // @phpcs:ignore
 
-		wp_enqueue_style( 'everest-news-fonts', everest_news_fonts_url() );
+		wp_enqueue_style( 'everest-news-fonts', everest_news_fonts_url() ); // @phpcs:ignore
 
-		wp_enqueue_style( 'everest-news-main', get_template_directory_uri() . '/assets/dist/css/main.css' );
+		wp_enqueue_style( 'everest-news-main', get_template_directory_uri() . '/assets/dist/css/main.css' ); // @phpcs:ignore
 
 		wp_enqueue_script( 'everest-news-bundle', get_template_directory_uri() . '/assets/dist/js/bundle.min.js', array( 'jquery', 'masonry' ), EVEREST_NEWS_VERSION, true );
 
@@ -209,50 +228,57 @@ class Everest_News {
 	 *
 	 * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
 	 */
-	function widgets_area_init() {
+	public function widgets_area_init() {
 
-		register_sidebar( array(
-			'name'          => esc_html__( 'Sidebar', 'everest-news' ),
-			'id'            => 'sidebar',
-			'description'   => '',
-			'before_widget' => '<div id="%1$s" class="widget"><div class="%2$s">',
-			'after_widget'  => '</div></div>',
-			'before_title'  => '<div class="widget-title"><h3>',
-			'after_title'   => '</h3></div>',
-		) );
-
-
-		register_sidebar( array(
-			'name'          => esc_html__( 'Toggle Sidebar', 'everest-news' ),
-			'id'            => 'toggle-sidebar',
-			'description'   => '',
-			'before_widget' => '<div id="%1$s" class="widget"><div class="%2$s">',
-			'after_widget'  => '</div></div>',
-			'before_title'  => '<div class="widget-title"><h3>',
-			'after_title'   => '</h3></div>',
-		) );
-
-		register_sidebar( array(
-			'name'          => esc_html__( 'Footer', 'everest-news' ),
-			'id'            => 'footer',
-			'description'   => '',
-			'before_widget' => '<div class="en-col"><div id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</div></div>',
-			'before_title'  => '<div class="widget-title"><h3>',
-			'after_title'   => '</h3></div>',
-		) );
-
-		$header_layout = everest_news_get_option( 'everest_news_select_header_layout' );
-		if( $header_layout == 'header_2' ) {
-			register_sidebar( array(
-				'name'          => esc_html__( 'Header Advertisement', 'everest-news' ),
-				'id'            => 'header-advertisement',
+		register_sidebar(
+			array(
+				'name'          => esc_html__( 'Sidebar', 'everest-news' ),
+				'id'            => 'sidebar',
 				'description'   => '',
-				'before_widget' => '<div id="%1$s" class="widget %2$s">',
-				'after_widget'  => '</div>',
+				'before_widget' => '<div id="%1$s" class="widget"><div class="%2$s">',
+				'after_widget'  => '</div></div>',
 				'before_title'  => '<div class="widget-title"><h3>',
 				'after_title'   => '</h3></div>',
-			) );
+			)
+		);
+
+		register_sidebar(
+			array(
+				'name'          => esc_html__( 'Toggle Sidebar', 'everest-news' ),
+				'id'            => 'toggle-sidebar',
+				'description'   => '',
+				'before_widget' => '<div id="%1$s" class="widget"><div class="%2$s">',
+				'after_widget'  => '</div></div>',
+				'before_title'  => '<div class="widget-title"><h3>',
+				'after_title'   => '</h3></div>',
+			)
+		);
+
+		register_sidebar(
+			array(
+				'name'          => esc_html__( 'Footer', 'everest-news' ),
+				'id'            => 'footer',
+				'description'   => '',
+				'before_widget' => '<div class="en-col"><div id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</div></div>',
+				'before_title'  => '<div class="widget-title"><h3>',
+				'after_title'   => '</h3></div>',
+			)
+		);
+
+		$header_layout = everest_news_get_option( 'everest_news_select_header_layout' );
+		if ( 'header_2' === $header_layout ) {
+			register_sidebar(
+				array(
+					'name'          => esc_html__( 'Header Advertisement', 'everest-news' ),
+					'id'            => 'header-advertisement',
+					'description'   => '',
+					'before_widget' => '<div id="%1$s" class="widget %2$s">',
+					'after_widget'  => '</div>',
+					'before_title'  => '<div class="widget-title"><h3>',
+					'after_title'   => '</h3></div>',
+				)
+			);
 		}
 	}
 
@@ -276,7 +302,7 @@ class Everest_News {
 
 		$site_layout = everest_news_get_option( 'everest_news_page_layout' );
 
-		if( $site_layout == 'boxed' ) {
+		if ( 'boxed' === $site_layout ) {
 			$classes[] = 'boxed';
 		}
 
@@ -295,13 +321,15 @@ class Everest_News {
 
 			echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
 		}
-	}	
+	}
 
 
 	/**
 	 * Trailing text for post excerpts.
 	 *
-	 * @return  void
+	 * @param string $more More.
+	 *
+	 * @return  string
 	 */
 	public function excerpt_more( $more ) {
 
@@ -311,7 +339,6 @@ class Everest_News {
 		}
 
 		return '';
-
 	}
 
 	/**
@@ -320,26 +347,25 @@ class Everest_News {
 	 * @return void
 	 */
 	public function load_dependencies() {
-		
-		// Load theme functions
+		// Load theme functions.
 		require get_template_directory() . '/inc/theme-functions.php';
-		// Load template functions
+		// Load template functions.
 		require get_template_directory() . '/inc/template-functions.php';
-		// Load custom hook functions
+		// Load custom hook functions.
 		require get_template_directory() . '/inc/theme-hooks.php';
-		// Load helper functions
+		// Load helper functions.
 		require get_template_directory() . '/inc/helper-functions.php';
-		// Load breadcrumb class
+		// Load breadcrumb class.
 		require get_template_directory() . '/third-party/breadcrumbs.php';
-		// Load TGM Plugin Activation
+		// Load TGM Plugin Activation.
 		require get_template_directory() . '/third-party/class-tgm-plugin-activation.php';
-		// Load Customizer
+		// Load Customizer.
 		require get_template_directory() . '/inc/customizer/class-everest-news-customizer.php';
-		// Load customizer defaults
+		// Load customizer defaults.
 		require get_template_directory() . '/inc/customizer/functions/customizer-defaults.php';
-		// Load Active Callback Functions 
+		// Load Active Callback Functions.
 		require get_template_directory() . '/inc/customizer/functions/active-callback.php';
-		// Load Widgets
+		// Load Widgets.
 		require get_template_directory() . '/inc/widgets/class-everest-news-widget-init.php';
 		/**
 		 * The class responsible for creating custom meta fields for post.
@@ -353,7 +379,6 @@ class Everest_News {
 	 * @return void
 	 */
 	public function customizer_initialization() {
-		
 		$customize = new Everest_News_Customize();
 	}
 
@@ -363,7 +388,6 @@ class Everest_News {
 	 * @return void
 	 */
 	public function widget_initialization() {
-		
 		$widget = new Everest_News_Widget_Init();
 	}
 
@@ -378,15 +402,13 @@ class Everest_News {
 		$post_meta = new Everest_News_Post_Meta();
 	}
 
-	
 	/**
 	 * Custom Search Form
 	 *
-	 * @return void
+	 * @return string
 	 */
 	public function search_form() {
-		$form = '<form role="search" method="get" id="search-form" class="clearfix" action="' . esc_url( home_url( '/' ) ) . '"><input type="search" name="s" placeholder="' . esc_attr__( 'Type Something', 'everest-news' ) . '" value"' . get_search_query() . '" ><input type="submit" id="submit" value="'. esc_attr__( 'Search', 'everest-news' ).'"></form>';
-
-        return $form;
+		$form = '<form role="search" method="get" id="search-form" class="clearfix" action="' . esc_url( home_url( '/' ) ) . '"><input type="search" name="s" placeholder="' . esc_attr__( 'Type Something', 'everest-news' ) . '" value="' . get_search_query() . '" ><input type="submit" id="submit" value="' . esc_attr__( 'Search', 'everest-news' ) . '"></form>';
+		return $form;
 	}
 }
