@@ -26,7 +26,7 @@ class Everest_News {
 		add_filter( 'body_class', array( $this, 'body_classes' ), 10, 1 );
 		add_action( 'wp_head', array( $this, 'pingback_header' ), 10 );
 		add_filter( 'excerpt_more', array( $this, 'excerpt_more' ), 10, 1 );
-		add_filter( 'get_search_form', array( $this, 'search_form' ), 10 );
+
 		add_action( 'widgets_init', array( $this, 'widgets_area_init' ), 10 );
 
 		$this->load_dependencies();
@@ -378,15 +378,5 @@ class Everest_News {
 		$post_meta = new Everest_News_Post_Meta();
 	}
 
-	
-	/**
-	 * Custom Search Form
-	 *
-	 * @return void
-	 */
-	public function search_form() {
-		$form = '<form role="search" method="get" id="search-form" class="clearfix" action="' . esc_url( home_url( '/' ) ) . '"><input type="search" name="s" placeholder="' . esc_attr__( 'Type Something', 'everest-news' ) . '" value="' . esc_attr( get_search_query() ) . '" ><input type="submit" id="submit" value="'. esc_attr__( 'Search', 'everest-news' ).'"></form>';
 
-        return $form;
-	}
 }

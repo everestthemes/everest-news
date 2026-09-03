@@ -227,7 +227,7 @@ class Ebwp_Notice_Everest_news {
 	public function notice_styles() {
 		?>
 		<style>
-			#everest-themes-framework-ebwp-notice {
+			#everest-news-ebwp-notice {
 				background: rgb(255,255,255);
 				background: linear-gradient(90deg, rgb(245 245 245) 0%, rgb(255 255 255) 100%);
 				display: flex;
@@ -240,27 +240,27 @@ class Ebwp_Notice_Everest_news {
 				box-shadow: 0 1px 4px rgb(0 0 0 / 15%);
 			}
 
-			#everest-themes-framework-ebwp-notice .message.et-notice-message {
+			#everest-news-ebwp-notice .message.et-notice-message {
 				width: 100%;
 				padding: 10px;
 			}
 
-			#everest-themes-framework-ebwp-notice .message.et-notice-message img {
+			#everest-news-ebwp-notice .message.et-notice-message img {
 				width: 53px;
 				float: left;
 				margin-right: 10px;
 			}
 
-			#everest-themes-framework-ebwp-notice .et-notice-message h1{
+			#everest-news-ebwp-notice .et-notice-message h1{
 				margin: 0; padding: 0;
 				font-size: 24px;
 				font-weight: 400;
 			}
-			#everest-themes-framework-ebwp-notice .et-notice-message p {
+			#everest-news-ebwp-notice .et-notice-message p {
 				font-size: 14px;
 				margin: 0;
 			}
-			#everest-themes-framework-ebwp-notice .et-notice-message p strong {
+			#everest-news-ebwp-notice .et-notice-message p strong {
 				color: #2271B1;
 			}
 			.et-notice-actions {
@@ -268,7 +268,7 @@ class Ebwp_Notice_Everest_news {
 				padding: 10px 10px 15px;
 				background: linear-gradient(90deg, rgb(234 234 235) 0%, rgb(255 255 255) 100%);
 			}
-			#everest-themes-framework-ebwp-notice .et-notice-actions button, #everest-themes-framework-ebwp-notice .et-notice-actions a.button-primary{
+			#everest-news-ebwp-notice .et-notice-actions button, #everest-news-ebwp-notice .et-notice-actions a.button-primary{
 				margin: 8px 8px 0 0 !important;
 			}
 		</style>
@@ -282,19 +282,19 @@ class Ebwp_Notice_Everest_news {
 
 		if ( $this->install_activate ) {
 			?>
-			<div id="everest-themes-framework-ebwp-notice" class="notice is-dismissible">
+			<div id="everest-news-ebwp-notice" class="notice is-dismissible">
 				<div class="message et-notice-message">
 
 					<img class="logo-icon" src="<?php echo esc_url( self::LOGO_URL ); ?>">
 
-					<h1><?php esc_html_e( 'Thank You !!!', 'everest-themes-framework' ); ?></h1>
+					<h1><?php esc_html_e( 'Thank You !!!', 'everest-news' ); ?></h1>
 
 					<?php
 
 					$plugin_link = '<strong><a href="//wordpress.org/plugins/everest-backup/" target="_blank">Everest Backup</a></strong>';
 
 					/* translators: %s is the Everest Backup plugin name wrapped with html. */
-					$string = sprintf( __( '%s has been installed and activated successfully.', 'everest-themes-framework' ), $plugin_link );
+					$string = sprintf( __( '%s has been installed and activated successfully.', 'everest-news' ), $plugin_link );
 
 					echo wp_kses_post( wpautop( $string ) );
 					?>
@@ -348,7 +348,7 @@ class Ebwp_Notice_Everest_news {
 		 * If we are here, then lets disturb our user :D.
 		 */
 		?>
-		<div id="everest-themes-framework-ebwp-notice" class="notice">
+		<div id="everest-news-ebwp-notice" class="notice">
 			<div class="message et-notice-message">
 
 				<img class="logo-icon" src="<?php echo esc_url( self::LOGO_URL ); ?>">
