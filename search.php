@@ -40,7 +40,7 @@ $sidebar_position = everest_news_sidebar_position();
                                     <h2 class="clr-primary f-size-l">
 										<?php
 										/* translators: %s: search query. */
-										printf( esc_html__( 'Search Results for: %s', 'everest-news' ), '<span>' . get_search_query() . '</span>' );
+										printf( esc_html__( 'Search Results for: %s', 'everest-news' ), '<span>' . esc_html( get_search_query() ) . '</span>' );
 										?>
                                     </h2><!-- .clr-primary.f-size-l -->
                                 </div><!-- .page-title -->

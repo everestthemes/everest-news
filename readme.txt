@@ -4,8 +4,8 @@ Contributors: everestthemes
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, one-column, two-columns, blog, right-sidebar, theme-options, footer-widgets, left-sidebar, grid-layout, news, custom-header
 Requires PHP: 5.6
 Requires at least: 4.8.0
-Tested up to: 6.8.1
-Stable tag: 1.1.3
+Tested up to: 7.1
+Stable tag: 1.2.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -76,8 +76,8 @@ https://stocksnap.io/photo/analog-camera-ME8MTJVVSL (http://creativecommons.org/
 Logo Image & Advertisement Image, self created GPLv2
 
 
-Other Images
-header_2.jpg, header_5.jpg, sidebar_left.jpg, sidebar_right, and player-icon.png, self created GPLv2
+Other Images  
+header_2.jpg, header_5.jpg, sidebar_left.jpg, sidebar_right, and player-icon.png, self created GPLv2 
 
 
 == Installation ==
@@ -96,46 +96,54 @@ Everest News includes support for jetpack, contact Form 7
 
 == Changelog ==
 
+= 1.2.2 - September 03, 2026 =
+- Compatibility check with WordPress 7.1
+- Theme Check errors resolved, text domains fixed, and infinite search loop resolved
+
+= 1.2.1 - 26 April, 2023 =
+- Compatibility check with WordPress 6.2
+- Fix: xss bug fixes
+
 = v1.1.3 - July 14, 2025 =
-- Compatibility check with wordpress 6.8.1
+- Compatibility check with WordPress 6.8.1
 
 = v1.1.2 - May 1, 2025 =
-- Compatibility check with wordpress 6.8
+- Compatibility check with WordPress 6.8
 
 = v1.1.1 - April 4, 2024 =
 - fixed xss vulnerability
 
 = 1.1.0 - 11 April, 2023 ==
 
-= 1.0.9 - 7 April, 2022 ==
+= 1.0.9 - 7 April, 2022 == 
 
 - Compatibility check with WordPress 5.9
 - Added: Notice Banner added
 
-= 1.0.8 - 21 July, 2021 ==
+= 1.0.8 - 21 July, 2021 == 
 
 - Compatibility check with WordPress 5.8
 - Added: Theme support 'widgets-block-editor'
 
-= 1.0.7 - 17 May, 2021 ==
+= 1.0.7 - 17 May, 2021 == 
 
 - Compatibility check with WordPress 5.7
 
-= 1.0.6 - 12 December, 2020 ==
+= 1.0.6 - 12 December, 2020 == 
 
 - Compatibility check with WordPress 5.6
 
-= 1.0.5 - 25 November, 2020 ==
+= 1.0.5 - 25 November, 2020 == 
 
 - Fix: Minor bug fixes
 
-= 1.0.4 - 15 October, 2019 ==
+= 1.0.4 - 15 October, 2019 == 
 
 - Fix: Breadcrumb issue (The value provided for id must be a valid URL)
 - Fix: Translation issue
 
 
-= 1.0.3 - 23 August, 2019 ==
+= 1.0.3 - 23 August, 2019 == 
 
 - Required php version updated to 5.6
 - Tested upto 5.2.2 WordPress version
@@ -146,10 +154,10 @@ Everest News includes support for jetpack, contact Form 7
 - Updated language file
 
 
-= 1.0.2 - 22 April, 2019 ==
+= 1.0.2 - 22 April, 2019 == 
 
 - Fix: smooth scroll issue at Chrome browser
-- Removed: Smoothscroll.js
+- Removed: Smoothscroll.js 
 
 
 == 1.0.1 - December 20, 2018 ==

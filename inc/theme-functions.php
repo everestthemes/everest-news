@@ -43,7 +43,7 @@ if ( !function_exists( 'everest_news_navigation_fallback' ) ) {
 		  	<?php 
 		  	if( $show_home_icon == true && $header_template == 'header_2' ) { 
 		  		?>
-	        	<li class="home-btn"><a href="<?php echo esc_url( home_url( '/' ) );?>"><i class="fas fa-home"></i></a></li>
+	        	<li class="home-btn"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home"></i></a></li>
 	        	<?php 
 	    	}
 
