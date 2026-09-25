@@ -4,7 +4,7 @@ Contributors: everestthemes
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, one-column, two-columns, blog, right-sidebar, theme-options, footer-widgets, left-sidebar, grid-layout, news, custom-header
 Requires PHP: 5.6
 Requires at least: 4.8.0
-Tested up to: 7.1
+Tested up to: 7.1.2
 Stable tag: 1.2.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -97,7 +97,7 @@ Everest News includes support for jetpack, contact Form 7
 == Changelog ==
 
 = 1.2.2 - September 03, 2026 =
-- Compatibility check with WordPress 7.1
+- Compatibility check with WordPress 7.1.2
 - Theme Check errors resolved, text domains fixed, and infinite search loop resolved
 
 = 1.2.1 - 26 April, 2023 =
